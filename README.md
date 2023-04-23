@@ -9,7 +9,7 @@ Not all this code is mine. Well-- most of it is, but heres the references and wh
 <br/>
 <a href="https://github.com/rdbo">rdbo</a> -> ImGui DirectX 11 Kiero Implementation - Gave the functionality of ImGui + MinHook, for the GUI and the hooks of this client. Setup The Basic Framework.
 <br/>
-<a href="https://github.com/horionclient/Horion">Horion Client</a> -> Layout - Didn't really steal code from them, but I used their layout, considering they're a well established and known mod utility.
+<a href="https://github.com/horionclient/Horion">Horion Client</a> -> Layout - Didn't really use code from them, but I used their layout, considering they're a well established and known mod utility.
 <br/>
 
 # 3 - Guide Of Template
