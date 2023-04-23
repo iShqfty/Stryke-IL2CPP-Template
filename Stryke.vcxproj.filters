@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Stryke">
+      <UniqueIdentifier>{0c7dd19d-e6fc-4838-8733-278ae3c91acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{905a151e-dcc1-487d-b4cb-c29ec6863cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{c8d08e01-2f9a-4b14-a8f8-4df006bbab3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{376882c7-9469-49b2-9a4c-ad1602bda0db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{cfa46c57-c155-4eed-8aac-a629c6c63785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stryke\Draw">
+      <UniqueIdentifier>{c8407fd9-50c4-40f1-9fc3-395384ad4fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Source">
+      <UniqueIdentifier>{b32e93f8-b145-4cd2-8a71-36febdc82ffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Source\hde">
+      <UniqueIdentifier>{c845691b-7ab7-4911-9275-df8a85dd7e72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stryke\Module">
+      <UniqueIdentifier>{633e2dbe-ef3e-45c9-ace9-8d9df597d0bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stryke\Menu">
+      <UniqueIdentifier>{3fff7443-e721-417d-8dd0-333d32eed8a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stryke\Module\Modules">
+      <UniqueIdentifier>{ed14e3c8-eced-4be9-895e-4203b886223b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Hooks">
+      <UniqueIdentifier>{f12e58b3-ace5-4518-be79-8521b820fc9e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\includes.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Draw\imconfig.h">
+      <Filter>Stryke\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Draw\imgui.h">
+      <Filter>Stryke\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Draw\imgui_impl_dx11.h">
+      <Filter>Stryke\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Draw\imgui_impl_win32.h">
+      <Filter>Stryke\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Draw\imgui_internal.h">
+      <Filter>Stryke\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Draw\imstb_rectpack.h">
+      <Filter>Stryke\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Draw\imstb_textedit.h">
+      <Filter>Stryke\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Draw\imstb_truetype.h">
+      <Filter>Stryke\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Source\buffer.h">
+      <Filter>Utils\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Source\trampoline.h">
+      <Filter>Utils\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Source\hde\hde32.h">
+      <Filter>Utils\Source\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Source\hde\hde64.h">
+      <Filter>Utils\Source\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Source\hde\pstdint.h">
+      <Filter>Utils\Source\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Source\hde\table32.h">
+      <Filter>Utils\Source\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Source\hde\table64.h">
+      <Filter>Utils\Source\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Menu\ClickGui.h">
+      <Filter>Stryke\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Menu\css.h">
+      <Filter>Stryke\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\CExample.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Hooks\Hooks.h">
+      <Filter>Utils\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SRC.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Module\ModManager.h">
+      <Filter>Stryke\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Module\Modules\Module.h">
+      <Filter>Stryke\Module\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Stryke\Module\Modules\TestMod.h">
+      <Filter>Stryke\Module\Modules</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Stryke\Loader.cpp">
+      <Filter>Stryke</Filter>
+    </ClCompile>
+    <ClCompile Include="Stryke\Draw\imgui.cpp">
+      <Filter>Stryke\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Stryke\Draw\imgui_demo.cpp">
+      <Filter>Stryke\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Stryke\Draw\imgui_draw.cpp">
+      <Filter>Stryke\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Stryke\Draw\imgui_impl_dx11.cpp">
+      <Filter>Stryke\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Stryke\Draw\imgui_impl_win32.cpp">
+      <Filter>Stryke\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Stryke\Draw\imgui_widgets.cpp">
+      <Filter>Stryke\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Source\buffer.c">
+      <Filter>Utils\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Source\hook.c">
+      <Filter>Utils\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Source\trampoline.c">
+      <Filter>Utils\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Source\hde\hde32.c">
+      <Filter>Utils\Source\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Source\hde\hde64.c">
+      <Filter>Utils\Source\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="Stryke\Menu\Render.cpp">
+      <Filter>Stryke\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Stryke\Menu\ClickGui.cpp">
+      <Filter>Stryke\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Stryke\Menu\css.cpp">
+      <Filter>Stryke\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\CExample.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Hooks\Hooks.cpp">
+      <Filter>Utils\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Stryke\Module\ModManager.cpp">
+      <Filter>Stryke\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Stryke\Module\Modules\Module.cpp">
+      <Filter>Stryke\Module\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Stryke\Module\Modules\TestMod.cpp">
+      <Filter>Stryke\Module\Modules</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
