@@ -6,8 +6,11 @@ This repo is a combination of inspiration and additional code (all attributed) f
 
 # 2 - Credit
 Not all this code is mine. Well-- most of it is, but heres the references and what I used from them:
+<br/>
 <a href="https://github.com/rdbo">rdbo</a> -> ImGui DirectX 11 Kiero Implementation - Gave the functionality of ImGui + MinHook, for the GUI and the hooks of this client. Setup The Basic Framework.
+<br/>
 <a href="https://github.com/horionclient/Horion">Horion Client</a> -> Layout - Didn't really steal code from them, but I used their layout, considering they're a well established and known mod utility.
+<br/>
 
 # 3 - Guide Of Template
 In these next sections I will be describing to you what is inside of this template, and how you can use it to create hacks, including the classes, functionality, etc. There are also comments scattered throughout to help you understand along the way, sort of like tooltips.
@@ -28,7 +31,7 @@ Step 1 - <b>Get Game Contents</b> - Use IL2CPPDumper to dump your games info, an
 <br/>
 Step 2 - <b>Implement Class</b> - In the stryke SDK, there is an example implementation. Broken down, it is creating your own class from the template of the il2cpp.h file. Look at CExample.cpp & CExample.h to understand.
 <br/>
-Step 3 - <b>Define Nethods</b> - Within your implemented class, define methods that are found within your game, in this class. See CExample.cpp & CExample.h to understand.
+Step 3 - <b>Define Methods</b> - Within your implemented class, define methods that are found within your game, in this class. See CExample.cpp & CExample.h to understand.
 <br/>
 
 # 3.2 - GUI
