@@ -55,8 +55,7 @@ public:
 	void checkEnabled();
 	void setEnabled(bool enb);
 	void addBoolSetting(SettingType type, const char* desc, SettingVar* val);
-	void addIntSetting(SettingType type, const char* desc, SettingVar* val, SettingVar* minVal, SettingVar* maxVal);
-	void addFloatSetting(SettingType type, const char* desc, SettingVar* val, SettingVar* minVal, SettingVar* maxVal);
+	void addNumberSetting(SettingType type, const char* desc, SettingVar* val, SettingVar* minVal, SettingVar* maxVal);
 	
 
 	virtual void onEnable();
