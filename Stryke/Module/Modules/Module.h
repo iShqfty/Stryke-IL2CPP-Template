@@ -10,6 +10,21 @@ enum Category {
 	MISC = 4
 };
 
+enum SettingType {
+	BOOL = 0,
+	INT = 1,
+	FLOAT = 2
+};
+
+class Setting {
+private:
+	SettingType type;
+	auto var;
+public:
+	Setting(SettingType type, auto var);
+	
+}
+
 class SModule {
 public:
 	bool prev = false;
@@ -18,6 +33,7 @@ private:
 	const char* name;
 	Category cat;
 	const char* desc;
+	std::vector<Setting> settings;
 public:
 	SModule(const char* name, Category c, const char* desc);
 
@@ -27,6 +43,7 @@ public:
 	bool isEnabled() { return this->enabled; }
 	void checkEnabled();
 	void setEnabled(bool enb);
+	void registerSetting(SettingType type, auto var);
 
 	virtual void onEnable();
 	virtual void onDisable();
