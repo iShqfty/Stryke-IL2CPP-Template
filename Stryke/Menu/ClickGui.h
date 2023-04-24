@@ -26,6 +26,7 @@ public:
 	void ToggleButton(const char* name, bool* enb);
 	void RenderSettings();
 	void RenderCategory(Category c);
+	void RenderTooltip(const char* ttp);
 public:
 	void SetPadding(float to) { this->padding = to; }
 	void SetHeight(float to) { this->height = to; }
