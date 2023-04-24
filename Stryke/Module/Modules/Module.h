@@ -54,7 +54,10 @@ public:
 	bool isEnabled() { return this->enabled; }
 	void checkEnabled();
 	void setEnabled(bool enb);
-	void registerSetting(SettingType type, const char* desc, auto* var);
+	void addBoolSetting(SettingType type, const char* desc, SettingVar* val);
+	void addIntSetting(SettingType type, const char* desc, SettingVar* val, SettingVar* minVal, SettingVar* maxVal);
+	void addFloatSetting(SettingType type, const char* desc, SettingVar* val, SettingVar* minVal, SettingVar* maxVal);
+	
 
 	virtual void onEnable();
 	virtual void onDisable();
