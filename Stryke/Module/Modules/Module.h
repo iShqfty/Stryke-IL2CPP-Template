@@ -22,7 +22,7 @@ private:
 	const char* desc;
 	auto* var;
 public:
-	Setting(SettingType type, const char* desc, auto var);
+	Setting(SettingType type, const char* desc, auto* var);
 	
 }
 
