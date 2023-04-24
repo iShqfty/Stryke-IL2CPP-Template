@@ -8,6 +8,12 @@ Setting::Setting(SettingType type, const char* desc, SettingVar* val, SettingVar
 	this->maxVal = maxVal;
 }
 
+Setting::Setting(SettingType type, const char* desc, SettingVar* val) {
+	this->type = type;
+	this->desc = desc;
+	this->val = val;
+}
+
 SModule::SModule(const char* name, Category c, const char* desc) {
 	this->name = name;
 	this->cat = c;
