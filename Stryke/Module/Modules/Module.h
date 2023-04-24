@@ -31,10 +31,9 @@ private:
 	SettingVar* minVal;
 	SettingVar* maxVal;
 	const char* desc;
-	auto* var;
 public:
-	Setting(SettingType type, const char* desc, auto* var);
-	
+	Setting(SettingType type, const char* desc, SettingVar* val, SettingVar* minVal, SettingVar* maxVal);
+	Setting(SettingType type, const char* desc, SettingVar* val);
 };
 
 class SModule {
