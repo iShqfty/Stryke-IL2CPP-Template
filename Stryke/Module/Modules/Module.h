@@ -20,7 +20,7 @@ class Setting {
 private:
 	SettingType type;
 	const char* desc;
-	auto var;
+	auto* var;
 public:
 	Setting(SettingType type, const char* desc, auto var);
 	
@@ -44,7 +44,7 @@ public:
 	bool isEnabled() { return this->enabled; }
 	void checkEnabled();
 	void setEnabled(bool enb);
-	void registerSetting(SettingType type, const char* desc, auto var);
+	void registerSetting(SettingType type, const char* desc, auto* var);
 
 	virtual void onEnable();
 	virtual void onDisable();
