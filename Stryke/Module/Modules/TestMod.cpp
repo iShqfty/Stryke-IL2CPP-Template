@@ -2,7 +2,7 @@
 #include "Module.h"
 
 TestMod::TestMod() : SModule("TestMod", Category::PLAYER, "A Test Mod As A Template") {
-
+	this->registerSetting(SettingType::FLOAT, "Test Float", this->testFloat));
 }
 
 //SModule Class Methods (Inherited).
