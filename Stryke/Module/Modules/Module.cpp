@@ -30,3 +30,7 @@ void SModule::setEnabled(bool enb) {
 			this->onDisable();
 	}
 }
+
+void SModule::registerSetting(SettingType type, auto var) {
+	this->settings.push_back(Setting(type, var));
+}
