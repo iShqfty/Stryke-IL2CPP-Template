@@ -1,5 +1,11 @@
 #include "Module.h"
 
+Setting::Setting(SettingType type, const char* desc, auto* var) { 
+	this->type = type;
+	this->desc = desc;
+	this->var = var;
+}
+
 SModule::SModule(const char* name, Category c, const char* desc) {
 	this->name = name;
 	this->cat = c;
