@@ -19,9 +19,10 @@ enum SettingType {
 class Setting {
 private:
 	SettingType type;
+	const char* desc;
 	auto var;
 public:
-	Setting(SettingType type, auto var);
+	Setting(SettingType type, const char* desc, auto var);
 	
 }
 
@@ -43,7 +44,7 @@ public:
 	bool isEnabled() { return this->enabled; }
 	void checkEnabled();
 	void setEnabled(bool enb);
-	void registerSetting(SettingType type, auto var);
+	void registerSetting(SettingType type, const char* desc, auto var);
 
 	virtual void onEnable();
 	virtual void onDisable();
