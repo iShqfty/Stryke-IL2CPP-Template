@@ -100,7 +100,9 @@ void ClickGui::ToggleButton(const char* name, bool* enb) {
 	drawlst->AddText(ImVec2(p.x + 4, p.y + 3), col_txt, name);
 }
 
-inline bool foundMods = 0;
+void ClickGui::RenderTooltip(const char* ttp) {}
+
+inline int foundMods = 0;
 void ClickGui::RenderCategory(Category c) {
 	foundMods = 0;
 	ImGui::Begin(this->CatToName(c), NULL,
