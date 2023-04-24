@@ -11,20 +11,31 @@ enum Category {
 };
 
 enum SettingType {
-	BOOL = 0,
-	INT = 1,
-	FLOAT = 2
+	BOOL_ST = 0,
+	INT_ST = 1,
+	FLOAT_ST = 2
+};
+
+class SettingVar {
+	union {
+		bool _boolst;
+		int _intst;
+		float _floatst;
+	};
 };
 
 class Setting {
 private:
 	SettingType type;
+	SettingVar* val;
+	SettingVar* minVal;
+	SettingVar* maxVal;
 	const char* desc;
 	auto* var;
 public:
 	Setting(SettingType type, const char* desc, auto* var);
 	
-}
+};
 
 class SModule {
 public:
