@@ -73,7 +73,8 @@ ImVec2 ClickGui::GetMenuSize() {
 
 // ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
 
-void ClickGui::ToggleButton(const char* name, bool* enb) {
+bool ClickGui::ToggleButton(const char* name, bool* enb) {
+	ret = false;
 	ImVec2 p = ImGui::GetCursorScreenPos();
 	ImDrawList* drawlst = ImGui::GetWindowDrawList();
 	
@@ -85,6 +86,7 @@ void ClickGui::ToggleButton(const char* name, bool* enb) {
 
 	if (ImGui::InvisibleButton(id.c_str(), hw))
 		*enb = !*enb;
+		ret = true;
 	ImU32 col_bg;
 	ImU32 col_txt;
 	if (ImGui::IsItemHovered()) {
@@ -98,9 +100,22 @@ void ClickGui::ToggleButton(const char* name, bool* enb) {
 
 	drawlst->AddRectFilled(p, ImVec2(p.x + hw.x, p.y + hw.y), col_bg);
 	drawlst->AddText(ImVec2(p.x + 4, p.y + 3), col_txt, name);
+	
+	return ret;
 }
 
-void ClickGui::RenderTooltip(const char* ttp) {}
+void ClickGui::RenderTooltip(const char* ttp) {
+	ImGui::Begin("##tooltipmenu", NULL, 
+		ImGuiWindowFlags_NoResize |
+		ImGuiWindowFlags_NoCollapse |
+		ImGuiWindowFlags_NoScrollbar |
+		ImGuiWindowFlags_NoScrollWithMouse |
+		ImGuiWindowFlags_NoTitleBar |
+		ImGuiWindowFlags_NoMove);
+	ImGui::SetWindowPos(ImVec2(0, ImGui::GetIO().DisplaySize.y - 30), ImGuiCond_Once);
+	ImGui::Text(ttp);
+	ImGui::End();
+}
 
 inline int foundMods = 0;
 void ClickGui::RenderCategory(Category c) {
@@ -115,7 +130,8 @@ void ClickGui::RenderCategory(Category c) {
 	for (auto& mod : mmgr.mods) {
 		if (mod.get()->getCateg() == c) {
 			foundMods += 1;
-			ToggleButton(mod.get()->getName(), &mod.get()->enabled);
+			if (ToggleButton(mod.get()->getName(), &mod.get()->enabled))
+				this->RenderTooltip(mod.get()->getDesc());
 			mod.get()->checkEnabled();
 			if (mod.get()->enabled)
 				mod.get()->onFrame();
