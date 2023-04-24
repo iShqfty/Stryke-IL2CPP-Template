@@ -1,9 +1,11 @@
 #include "Module.h"
 
-Setting::Setting(SettingType type, const char* desc, auto* var) { 
+Setting::Setting(SettingType type, const char* desc, SettingVar* val, SettingVar* minVal, SettingVar* maxVal) { 
 	this->type = type;
 	this->desc = desc;
-	this->var = var;
+	this->val = val;
+	this->minVal = minVal;
+	this->maxVal = maxVal;
 }
 
 SModule::SModule(const char* name, Category c, const char* desc) {
