@@ -45,6 +45,10 @@ void SModule::setEnabled(bool enb) {
 	}
 }
 
-void SModule::registerSetting(SettingType type, const char* desc, auto var) {
-	this->settings.push_back(Setting(type, desc, var));
+void SModule::addBoolSetting(const char* desc, SettingVar* val) {
+	this->settings.push_back(Setting(SettingType::BOOL_ST, desc, val));
+}
+
+void SModule::addNumberSetting(SettingType type, const char* desc, SettingVar* val, SettingVar* minVal, SettingVar* maxVal) {
+	this->settings.push_back(Setting(type, desc, val, minVal, maxVal));
 }
