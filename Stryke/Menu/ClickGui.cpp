@@ -1,5 +1,3 @@
-#pragma once
-
 #include "ClickGui.h"
 
 #include "../Module/ModManager.h"
