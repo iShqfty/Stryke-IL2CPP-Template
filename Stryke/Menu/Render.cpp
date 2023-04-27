@@ -1,5 +1,3 @@
-#pragma once
-
 #include "../../Include/includes.h"
 
 #include "ClickGui.h"
