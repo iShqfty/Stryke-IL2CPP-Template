@@ -1,6 +1,3 @@
-#pragma once
-
-
 #include "../Include/includes.h"
 
 #include "../Utils/Hooks/Hooks.h"
