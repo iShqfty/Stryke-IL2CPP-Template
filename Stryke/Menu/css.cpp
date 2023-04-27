@@ -1,5 +1,3 @@
-#pragma once
-
 #include "ClickGui.h"
 
 #include "../Draw/imgui.h"
