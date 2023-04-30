@@ -1,5 +1,8 @@
 #pragma once
 
+//used for mod files, essentially a pch for the SDK
+//add all custom class files that you create below as to be usable in mod files.
+
 #include "CExample.h"
 
 #include <inttypes.h>
