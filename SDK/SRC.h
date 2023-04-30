@@ -1,5 +1,7 @@
 #pragma once
 
+//a pch for developing all custom SDK Files
+//include il2cpp.h to give the clases usable types.
 
 #include "src/il2cpp.h"
 
