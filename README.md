@@ -3,6 +3,9 @@
 # Stryke-IL2CPP-Template
 A template project for making internal (.dll) Unity IL2CPP hack clients.
 
+# Pre-Warning
+You must set the project config to <b>Release<b> & at least <b>C++17<b> Standard
+
 # 1 - Intro
 This repo is a combination of inspiration and additional code (all attributed) from different repos. It is meant to be a template for creating modules, hooks and a GUI for an internal (.dll) C++ hack client, more specifically, for il2cpp unity games. All the implementations and functions will be explained below.
 
