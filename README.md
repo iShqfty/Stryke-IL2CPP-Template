@@ -2,8 +2,9 @@
 
 # Stryke-IL2CPP-Template
 A template project for making internal (.dll) Unity IL2CPP hack clients.
+<strong>YOUTUBE TUTORIAL (Recommended) -> https://www.youtube.com/watch?v=UNGER42P0d4&list=PLeJ_V4x5Tm7EjqUK555XCD6j0jL-8_wft</strong>
 
-# Pre-Warning
+# Warning
 You must set the project config to <b>Release</b> & at least <b>C++17</b> Standard
 
 # 1 - Intro
