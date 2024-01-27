@@ -1,7 +1,7 @@
 <img src="https://raw.githubusercontent.com/iShqfty/Stryke-IL2CPP-Template/master/banner.png" width="400" height="160" alt="Stryke-Logo">
 
 # Stryke-IL2CPP-Template
-A template project for making internal (.dll) Unity IL2CPP hack clients.
+A template project for making internal (.dll) Unity IL2CPP modifications.
 <br>
 <strong>YOUTUBE TUTORIAL (Recommended) -> https://www.youtube.com/watch?v=UNGER42P0d4&list=PLeJ_V4x5Tm7EjqUK555XCD6j0jL-8_wft</strong>
 
@@ -9,7 +9,7 @@ A template project for making internal (.dll) Unity IL2CPP hack clients.
 You must set the project config to <b>Release</b> & at least <b>C++17</b> Standard
 
 # 1 - Intro
-This repo is a combination of inspiration and additional code (all attributed) from different repos. It is meant to be a template for creating modules, hooks and a GUI for an internal (.dll) C++ hack client, more specifically, for il2cpp unity games. All the implementations and functions will be explained below.
+This repo is a combination of inspiration and additional code (all attributed) from different repos. It is meant to be a template for creating modules, hooks and a GUI for an internal (.dll) C++ modification client, more specifically, for il2cpp unity games. All the implementations and functions will be explained below.
 
 # 2 - Credit
 Not all this code is mine. Well-- most of it is, but heres the references and what I used from them:
@@ -20,7 +20,7 @@ Not all this code is mine. Well-- most of it is, but heres the references and wh
 <br/>
 
 # 3 - Guide Of Template
-In these next sections I will be describing to you what is inside of this template, and how you can use it to create hacks, including the classes, functionality, etc. There are also comments scattered throughout to help you understand along the way, sort of like tooltips.
+In these next sections I will be describing to you what is inside of this template, and how you can use it to create modifications, including the classes, functionality, etc. There are also comments scattered throughout to help you understand along the way, sort of like tooltips.
 <br/>
 <b>SDK</b>
 <br/>
@@ -47,14 +47,14 @@ The GUI is how you draw and toggle your modules. This GUI is drawn with <a href=
 # 3.3 - Modules
 The modules are created as classes that inherit from the Stryke Module class, 'SModule'. This class can be found inside 'Module.cpp'/'Module.h', look inside for more details. Inside these modules, there are 3 main methods:
 <br/>
-<b>onEnable</b> - This method is called on the first frame that the given module is enabled. Usually inside this method you won't do anything related to the actual hack, you should mainly focus on checking if the hook(s) / classes you are using for this mod are valid pointers, and if not, immediately disabling as not to crash. 
+<b>onEnable</b> - This method is called on the first frame that the given module is enabled. Usually inside this method you won't do anything related to the actual modification, you should mainly focus on checking if the hook(s) / classes you are using for this mod are valid pointers, and if not, immediately disabling as not to crash. 
 <br/>
-<b>onFrame</b> - This method is called every frame the mod is enabled. This is usually where the main cheat implementation goes. Every time before doing the hack in this, however, you should ensure, again, that the hook(s) / classes you are using for this mod are valid pointers, and if not, immediately disabling as not to crash.
+<b>onFrame</b> - This method is called every frame the mod is enabled. This is usually where the main cheat implementation goes. Every time before doing the modification in this, however, you should ensure, again, that the hook(s) / classes you are using for this mod are valid pointers, and if not, immediately disabling as not to crash.
 <br/>
-<b>onDisable</b> - This method is called when the mod is disabled. It becomes the final call before the mod is enabled again. In this you should 'unhack' everything, or set everything back to normal.
+<b>onDisable</b> - This method is called when the mod is disabled. It becomes the final call before the mod is enabled again. In this you should 'unmodification' everything, or set everything back to normal.
 
 # 3.4 - Hooks
-The hooks are where you can use your implemented classes (<b>3.1 - SDK</b>) to get their instances within the game you're hacking. This hooking is with MinHook.
+The hooks are where you can use your implemented classes (<b>3.1 - SDK</b>) to get their instances within the game you're modificationing. This hooking is with MinHook.
 <br/>
 Step 1 - <b>Create Detour Functions</b> - When you hook, you want to reroute the function you hook, and get the types found within that function. You want to store these types somewhere, and in the 'Hooks' class, you can define areas to store them.
 <br/>
