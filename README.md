@@ -1,5 +1,3 @@
-<img src="https://raw.githubusercontent.com/iShqfty/Stryke-IL2CPP-Template/master/banner.png" width="400" height="160" alt="Stryke-Logo">
-
 # Stryke-IL2CPP-Template
 A template project for making internal (.dll) Unity IL2CPP runtime memory modifications.
 <br>
